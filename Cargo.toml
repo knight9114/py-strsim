@@ -1,0 +1,16 @@
+[package]
+name = "py-strsim"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "_py_strsim"
+crate-type = ["cdylib"]
+
+[dependencies]
+rayon = "1.5"
+strsim = "0.10"
+
+[dependencies.pyo3]
+version = "0.16"
+features = ["extension-module"]
